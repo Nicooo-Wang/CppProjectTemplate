@@ -23,8 +23,7 @@ install_doc: install_min
 	pip install jinja2 Pygments
 
 setup:
-	pip install conan --user
-	conan user
+	pip install conan==1.59.0
 
 prepare:
 	rm -rf build

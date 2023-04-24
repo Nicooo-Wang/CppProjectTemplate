@@ -11,6 +11,9 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
+    - name: setup
+      run: |
+        make setup
     - name: prepare
       run: |
         make prepare
