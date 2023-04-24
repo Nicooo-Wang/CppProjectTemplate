@@ -16,7 +16,7 @@ jobs:
         make setup
     - name: prepare_conan
       run: |
-        make prepare_conan
+        pip install conan=1.48.0
     - name: configure
       run: |
         cmake -H. -Bbuild -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="Debug"
