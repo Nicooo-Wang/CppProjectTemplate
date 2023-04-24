@@ -13,10 +13,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: setup
       run: |
-        make setup
-    - name: pgit stautsrepare_conan
-      run: |
         pip install conan=1.48.0
+    - name: prepare_conan
+      run: |
+        make prepare_conan
     - name: configure
       run: |
         cmake -H. -Bbuild -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="Debug"
