@@ -14,9 +14,9 @@ jobs:
     - name: setup
       run: |
         make setup
-    - name: prepare
+    - name: prepare_conan
       run: |
-        make prepare
+        make prepare_conan
     - name: configure
       run: |
         cmake -H"." -Bbuild -T host=x86 -A x64 -DCMAKE_BUILD_TYPE="Debug"
